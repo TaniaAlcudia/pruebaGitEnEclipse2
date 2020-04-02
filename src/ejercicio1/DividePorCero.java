@@ -10,6 +10,8 @@ public class DividePorCero
 		int dividendo, divisor;
 		float cociente;
 		
+		System.out.println("Escribo por modificar el fichero");
+		
 		try 
 		{
 			System.out.println("Introdude dividendo:");
