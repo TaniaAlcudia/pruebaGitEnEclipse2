@@ -36,18 +36,12 @@ public class Consola {
 
 	}
 	
-	public static int leeInt() {
+	public static int leeInt() throws NumberFormatException, IOException {
 		
 		BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
 		int x = 0;
-		try {
-			x = Integer.valueOf(in.readLine());
-		} catch (NumberFormatException | IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}  
+		x = Integer.valueOf(in.readLine()); 
 		return x;
-
 	}
 	
 	public static long leeLong() {
